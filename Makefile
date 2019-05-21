@@ -1,5 +1,7 @@
+# env VERSION=swift-DEVELOPMENT-SNAPSHOT-2019-05-19-a make build
+
 build:
-	docker build -t finestructure/swift:5.0 .
+	docker build -t finestructure/swift:$(VERSION) .
 
 push:
-	docker push finestructure/swift:5.0
+	docker push finestructure/swift:$(VERSION)
