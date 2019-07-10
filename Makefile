@@ -23,3 +23,5 @@ build-slim:
 
 push-slim:
 	docker push finestructure/swift:$(SWIFT_VERSION)-slim
+
+all: build build-slim push push-slim
