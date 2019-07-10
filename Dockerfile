@@ -38,6 +38,7 @@ RUN SWIFT_URL=https://swift.org/builds/$SWIFT_BRANCH/$(echo "$SWIFT_PLATFORM" | 
     && apt-get purge -y curl \
     && apt-get -y autoremove \
     && export GNUPGHOME="$(mktemp -d)" \
+    # this keeps failing, sas 2019-06-03
     # && set -e; \
     #     for key in \
     #   # pub   4096R/ED3D1561 2019-03-22 [expires: 2021-03-21]
